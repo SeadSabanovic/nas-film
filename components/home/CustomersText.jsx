@@ -3,33 +3,32 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { useLayoutEffect } from "react";
 import nf3 from "../../public/nf3.jpeg";
-import nf4 from "../../public/nf4.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const imageList = [
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
+  { src: nf3, alt: "" },
+  { src: nf3, alt: "" },
+  { src: nf3, alt: "" },
 ];
 const imageList2 = [
-  { src: nf4, alt: "" },
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
+  { src: nf3, alt: "" },
+  { src: nf3, alt: "" },
+  { src: nf3, alt: "" },
   { src: nf3, alt: "" },
 ];
 const imageList3 = [
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
   { src: nf3, alt: "" },
-  { src: nf4, alt: "" },
+  { src: nf3, alt: "" },
+  { src: nf3, alt: "" },
+  { src: nf3, alt: "" },
 ];
 
 export default function CustomersText() {

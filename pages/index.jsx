@@ -1,5 +1,6 @@
 import CustomersText from "@/components/home/CustomersText";
 import Landing from "@/components/home/Landing";
+import RedEpic from "@/components/home/RedEpic";
 import Head from "next/head";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Landing />
       <CustomersText />
+      <RedEpic />
     </>
   );
 }

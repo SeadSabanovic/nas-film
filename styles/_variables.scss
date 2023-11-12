@@ -1,10 +1,14 @@
 // Colors
-$color-text-dark: #000;
-$color-text-light: #fff;
+$color-text: #474747;
+$color-text-lighter: #5c5c5c;
+$color-text-light: #c0c0c0;
+$color-accent: #f48498;
 
-$color-bg-dark: #000;
-$color-bg-light: #fff;
+$color-bg: #f7f7f7;
 
 // Sizes
 $nav-height: 70px;
 $size-main: 24px;
+
+// Transitions
+$transition: cubic-bezier(0.4, 0, 0.2, 1);

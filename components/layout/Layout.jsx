@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Navigation from "../Navigation";
 
 import { Oswald, Merriweather } from "next/font/google";
@@ -18,7 +19,7 @@ export const merriweather = Merriweather({
 export default function layout({ children }) {
   return (
     <div className={`page ${merriweather.className} ${oswald.variable}`}>
-      <Navigation></Navigation>
+      <Navigation />
       <main>{children}</main>
     </div>
   );
