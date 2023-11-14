@@ -65,7 +65,7 @@ export default function Landing() {
         <div className="landing__content">
           <div className="landing__content__text">
             <h1 className="landing__content__text__title">
-              NAŠ FILM <small>xxxx - 2023</small>
+              NAŠ FILM <small>2013 - 2023</small>
             </h1>
             <h3 className="landing__content__text__subtitle">
               Pouzdan Partner u audio i video produkciji

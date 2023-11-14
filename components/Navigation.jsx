@@ -10,10 +10,14 @@ export default function Navigation() {
           <h1 className="navigation__logo">NF</h1>
           <ul className="navigation__links">
             <li className="navigation__links__link">
-              <Link href={"/"}>Home</Link>
+              <Link scroll={false} href={"/"}>
+                Home
+              </Link>
             </li>
             <li className="navigation__links__link">
-              <Link href={"about"}>About</Link>
+              <Link scroll={false} href={"about"}>
+                About
+              </Link>
             </li>
           </ul>
         </div>
