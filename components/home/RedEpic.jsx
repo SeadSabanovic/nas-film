@@ -1,18 +1,16 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useRouter } from "next/router";
 import { useLayoutEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function RedEpic() {
+  const router = useRouter();
   const canvas = useRef();
   let context;
 
   const fitImageOn = (canvas, imageObj) => {
-    let imageAspectRatio = imageObj.width / imageObj.height;
-    let canvasAspectRatio = canvas.width / canvas.height;
-    let renderableHeight, renderableWidth, xStart, yStart;
-
     let loadedImageWidth = imageObj.width;
     let loadedImageHeight = imageObj.height;
 
@@ -59,6 +57,17 @@ export default function RedEpic() {
         trigger: canvas.current,
         pin: true,
         scrub: 0.5,
+        onToggle: ({ progress }) => {
+          if (progress >= 0.99) {
+            router.push(
+              {
+                pathname: "/about",
+              },
+              undefined,
+              { scroll: false }
+            );
+          }
+        },
       },
       onUpdate: render,
     });
